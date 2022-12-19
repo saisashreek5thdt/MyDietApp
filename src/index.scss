@@ -1,0 +1,31 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Tailwindcss Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom SCSS Class Imports */
+@import "sass/main.scss";
+
+/* Syncfusion Import*/
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-react-navigations/styles/material.css';
