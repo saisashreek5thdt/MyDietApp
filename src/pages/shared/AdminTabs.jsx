@@ -5,39 +5,34 @@ import {
   TabItemsDirective,
 } from "@syncfusion/ej2-react-navigations";
 
-import Appointment from "../form-validations/Appointment";
-import MyPatients from "../form-validations/MyPatients";
-import Chat from "../form-validations/Chat";
-import CreatePatientForm from "../form-validations/Patient/CreatePatientForm";
-
-export default class DoctorTabs extends React.Component {
+export default class AdminTabs extends React.Component {
   constructor() {
     super(...arguments);
     this.headerText = [
-      { text: "Appointments" },
-      { text: "My Patients" },
-      { text: "Create Form Patient" },
-      { text: "Chat" },
+      { text: "Summary" },
+      { text: "Access Controls" },
+      { text: "Forms & Diet Charts" },
+      { text: "Data" },
     ];
   }
   content0() {
     return (
       <div className="py-5">
-        <Appointment />
+        {/* <Appointment /> */}
       </div>
     );
   }
   content1() {
     return (
       <div className="py-3">
-        <MyPatients />
+        {/* <MyPatients /> */}
       </div>
     );
   }
   content3() {
     return (
       <div className="py-3">
-        <Chat />
+        {/* <Chat /> */}
       </div>
     );
   }
@@ -45,7 +40,7 @@ export default class DoctorTabs extends React.Component {
   content2() {
     return (
       <div className="py-3">
-        <CreatePatientForm />
+        {/* <CreatePatientForm /> */}
       </div>
     );
   }
