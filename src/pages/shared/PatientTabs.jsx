@@ -4,6 +4,7 @@ import {
   TabItemDirective,
   TabItemsDirective,
 } from "@syncfusion/ej2-react-navigations";
+import Chat from "../form-validations/Chat";
 
 export default class PatientTabs extends React.Component {
   constructor() {
@@ -21,7 +22,7 @@ export default class PatientTabs extends React.Component {
     return <div className="py-3">{/* <MyPatients /> */}</div>;
   }
   content2() {
-    return <div className="py-3">{/* <Chat /> */}</div>;
+    return <div className="py-3"><Chat /></div>;
   }
 
   render() {
